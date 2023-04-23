@@ -1,4 +1,4 @@
-package top.mqxu.mybatis.dao;
+package top.rain.mybatis.dao;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;

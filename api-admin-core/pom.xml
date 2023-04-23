@@ -15,7 +15,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>top.mqxu</groupId>
+            <groupId>top.rain</groupId>
             <artifactId>api-base</artifactId>
             <version>${revision}</version>
         </dependency>
