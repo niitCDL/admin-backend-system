@@ -1,4 +1,4 @@
-package top.rain.security;
+package top.rain.security.user;
 
 import org.springframework.security.core.context.SecurityContextHolder;
 import top.rain.security.user.UserDetail;
