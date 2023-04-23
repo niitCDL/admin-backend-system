@@ -26,6 +26,12 @@
         </dependency>
 
         <dependency>
+            <groupId>top.rain</groupId>
+            <artifactId>api-admin-biz</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
@@ -36,6 +42,8 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+
     </dependencies>
 
 
