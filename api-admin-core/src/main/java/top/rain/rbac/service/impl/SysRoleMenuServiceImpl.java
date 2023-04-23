@@ -10,7 +10,7 @@ import top.rain.rbac.service.SysRoleMenuService;
 /**
  * 角色与菜单对应业务实现类
  *
- * @author mqxu
+ * @author rain
  */
 @Service
 public class SysRoleMenuServiceImpl extends BaseServiceImpl<SysRoleMenuDao, SysRoleMenuEntity> implements SysRoleMenuService {

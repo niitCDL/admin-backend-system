@@ -15,7 +15,7 @@ import java.util.Date;
 /**
  * 系统菜单vo
  *
- * @author mqxu
+ * @author rain
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

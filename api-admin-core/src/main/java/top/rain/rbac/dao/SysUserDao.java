@@ -8,7 +8,7 @@ import top.rain.rbac.entity.SysUserEntity;
 /**
  * 系统用户 dao
  *
- * @author mqxu
+ * @author rain
  */
 @Mapper
 public interface SysUserDao extends BaseDao<SysUserEntity> {

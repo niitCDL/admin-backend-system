@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * 错误编码枚举
  *
- * @author mqxu
+ * @author rain
  */
 @Getter
 @AllArgsConstructor

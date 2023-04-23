@@ -11,7 +11,7 @@ import java.util.Set;
 /**
  * 认证返回结果封装
  *
- * @author mqxu
+ * @author rain
  **/
 @Data
 @Schema(description = "认证返回结果")

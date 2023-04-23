@@ -9,7 +9,7 @@ import top.rain.rbac.service.SysLogLoginService;
 /**
  * 登录日志业务实现类
  *
- * @author mqxu
+ * @author rain
  **/
 @Service
 public class SysLogLoginServiceImpl extends BaseServiceImpl<SysLogLoginDao, SysLogLoginEntity> implements SysLogLoginService {

@@ -7,7 +7,7 @@ import top.rain.rbac.vo.SysTokenVO;
 /**
  * 权限认证服务
  *
- * @author mqxu
+ * @author rain
  */
 public interface SysAuthService {
     /**

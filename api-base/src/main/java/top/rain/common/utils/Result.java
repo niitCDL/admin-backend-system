@@ -7,7 +7,7 @@ import top.rain.common.exception.ErrorCode;
 /**
  * 统一响应返回封装
  *
- * @author mqxu
+ * @author rain
  */
 @Data
 @Schema(description = "响应")

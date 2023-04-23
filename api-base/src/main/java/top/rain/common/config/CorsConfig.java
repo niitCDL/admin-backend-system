@@ -9,7 +9,7 @@ import org.springframework.web.filter.CorsFilter;
 /**
  * 跨域配置
  *
- * @author mqxu
+ * @author rain
  */
 @Configuration
 public class CorsConfig {

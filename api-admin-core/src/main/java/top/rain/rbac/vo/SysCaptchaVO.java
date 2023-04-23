@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * 图片验证码
  *
- * @author mqxu
+ * @author rain
  */
 @Data
 @Schema(description = "图片验证码")

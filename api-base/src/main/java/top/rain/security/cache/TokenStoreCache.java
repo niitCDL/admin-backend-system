@@ -9,7 +9,7 @@ import top.rain.security.user.UserDetail;
 /**
  * 登录用户的缓存操作
  *
- * @author mqxu
+ * @author rain
  */
 @Component
 @AllArgsConstructor

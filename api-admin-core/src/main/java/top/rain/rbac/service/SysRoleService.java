@@ -7,7 +7,7 @@ import top.rain.rbac.entity.SysRoleEntity;
 /**
  * 系统角色业务接口
  *
- * @author mqxu
+ * @author rain
  */
 public interface SysRoleService extends BaseService<SysRoleEntity> {
 

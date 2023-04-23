@@ -11,7 +11,7 @@ import top.rain.mybatis.handler.FieldMetaObjectHandler;
 /**
  * MP 配置
  *
- * @author mqxu
+ * @author rain
  */
 @Configuration
 public class MybatisPlusConfig {

@@ -3,7 +3,7 @@ package top.rain.common.cache;
 /**
  * Redis Key管理
  *
- * @author mqxu
+ * @author rain
  */
 public class RedisKeys {
 

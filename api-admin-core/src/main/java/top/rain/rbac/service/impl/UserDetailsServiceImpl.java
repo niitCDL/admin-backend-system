@@ -12,7 +12,7 @@ import top.rain.rbac.service.SysUserDetailsService;
 /**
  * 我们的账号密码是存储在数据库里面的，SpringSecurity为我们提供了UserDetailsService接口，只需要实现 UserDetailsService接口
  *
- * @author mqxu
+ * @author rain
  **/
 @Service
 @AllArgsConstructor

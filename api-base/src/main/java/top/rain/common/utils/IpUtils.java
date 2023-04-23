@@ -8,7 +8,7 @@ import java.net.UnknownHostException;
 /**
  * IP地址 工具类
  *
- * @author mqxu
+ * @author rain
  */
 public class IpUtils {
 

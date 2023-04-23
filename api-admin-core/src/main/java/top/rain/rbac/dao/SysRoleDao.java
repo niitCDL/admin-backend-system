@@ -7,7 +7,7 @@ import top.rain.rbac.entity.SysRoleEntity;
 /**
  * 角色管理 dao
  *
- * @author mqxu
+ * @author rain
  */
 @Mapper
 public interface SysRoleDao extends BaseDao<SysRoleEntity> {

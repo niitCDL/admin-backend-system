@@ -17,7 +17,7 @@ import java.util.Properties;
  * SpringSecurity默认是对全部的路径进行拦截，没有权限是不能访问的
  * 我们可以通过HttpSecurity配置，指定放行的路径
  *
- * @author mqxu
+ * @author rain
  */
 @Component
 public class PermitResource {

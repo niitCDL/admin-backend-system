@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * JSON 工具类
  *
- * @author mqxu
+ * @author rain
  */
 public class JsonUtils {
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();

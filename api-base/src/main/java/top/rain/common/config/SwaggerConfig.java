@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * Swagger 配置
  *
- * @author mqxu
+ * @author rain
  */
 @Configuration
 public class SwaggerConfig {
@@ -27,14 +27,14 @@ public class SwaggerConfig {
     @Bean
     public OpenAPI customOpenApi() {
         Contact contact = new Contact();
-        contact.setName("mqxu@gmail.com");
+        contact.setName("rain@gmail.com");
 
         return new OpenAPI().info(new Info()
                 .title("接口文档")
                 .description("接口文档")
                 .contact(contact)
                 .version("1.0.0")
-                .termsOfService("https://mqxu.top"));
+                .termsOfService("https://rain.top"));
     }
 
 }

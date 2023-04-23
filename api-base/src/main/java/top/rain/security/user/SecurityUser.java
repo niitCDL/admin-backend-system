@@ -6,7 +6,7 @@ import top.rain.security.user.UserDetail;
 /**
  * Security 用户
  *
- * @author mqxu
+ * @author rain
  */
 public class SecurityUser {
 

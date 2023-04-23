@@ -7,7 +7,7 @@ import top.rain.rbac.entity.SysLogLoginEntity;
 /**
  * 登录日志 dao
  *
- * @author mqxu
+ * @author rain
  **/
 @Mapper
 public interface SysLogLoginDao extends BaseDao<SysLogLoginEntity> {

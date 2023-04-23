@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * 账号登录vo
  *
- * @author mqxu
+ * @author rain
  */
 @Data
 @Schema(description = "账号登录")

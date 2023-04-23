@@ -8,7 +8,7 @@ import top.rain.rbac.entity.SysRoleMenuEntity;
 /**
  * 角色与菜单对应关系 dao
  *
- * @author mqxu
+ * @author rain
  */
 @Mapper
 public interface SysRoleMenuDao extends BaseDao<SysRoleMenuEntity> {

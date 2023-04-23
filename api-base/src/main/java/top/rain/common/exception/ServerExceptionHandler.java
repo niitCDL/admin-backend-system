@@ -12,7 +12,7 @@ import top.rain.common.utils.Result;
 /**
  * 统一异常处理器
  *
- * @author mqxu
+ * @author rain
  */
 @Slf4j
 @RestControllerAdvice

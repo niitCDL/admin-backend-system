@@ -10,7 +10,7 @@ import java.io.Serializable;
 /**
  * 用户Token vo
  *
- * @author mqxu
+ * @author rain
  */
 @Data
 @AllArgsConstructor

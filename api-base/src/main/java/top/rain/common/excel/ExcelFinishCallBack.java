@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * excel读取数据完成
  *
- * @author mqxu
+ * @author rain
  */
 public interface ExcelFinishCallBack<T> {
 

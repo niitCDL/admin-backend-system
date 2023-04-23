@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * 菜单类型枚举
  *
- * @author mqxu
+ * @author rain
  */
 @Getter
 @AllArgsConstructor

@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  * 登录日志vo
- * @author mqxu
+ * @author rain
  **/
 @Data
 @Schema(description = "登录日志")

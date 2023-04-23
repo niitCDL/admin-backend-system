@@ -7,7 +7,7 @@ import top.rain.common.exception.ServerException;
 /**
  * 校验工具类
  *
- * @author mqxu
+ * @author rain
  */
 public class AssertUtils {
 

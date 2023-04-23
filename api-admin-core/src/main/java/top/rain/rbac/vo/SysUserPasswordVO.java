@@ -11,7 +11,7 @@ import java.io.Serializable;
 /**
  * 用户修改密码vo
  *
- * @author mqxu
+ * @author rain
  */
 @Data
 @Schema(description = "用户修改密码")

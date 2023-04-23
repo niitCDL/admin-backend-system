@@ -11,7 +11,7 @@ import java.util.Date;
 /**
  * 登录日志表实体类
  *
- * @author mqxu
+ * @author rain
  **/
 @Data
 @TableName("sys_log_login")

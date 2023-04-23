@@ -8,7 +8,7 @@ import java.util.Date;
 /**
  * 日期时间格式化工具类
  *
- * @author mqxu
+ * @author rain
  */
 public class DateUtils {
     /**

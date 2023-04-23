@@ -10,7 +10,7 @@ import top.rain.rbac.service.SysUserRoleService;
 /**
  * 用户角色关系业务实现类
  *
- * @author mqxu
+ * @author rain
  */
 @Service
 public class SysUserRoleServiceImpl extends BaseServiceImpl<SysUserRoleDao, SysUserRoleEntity> implements SysUserRoleService {

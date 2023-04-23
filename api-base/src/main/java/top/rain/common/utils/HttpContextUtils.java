@@ -15,7 +15,7 @@ import java.util.Map;
 /**
  * Http 工具类
  *
- * @author mqxu
+ * @author rain
  */
 public class HttpContextUtils {
 

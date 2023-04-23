@@ -8,7 +8,7 @@ import java.io.Serial;
 /**
  * 自定义异常
  *
- * @author mqxu
+ * @author rain
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

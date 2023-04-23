@@ -8,6 +8,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 import top.rain.common.exception.ServerException;
 import top.rain.rbac.service.SysAuthService;
+import top.rain.rbac.service.SysCaptchaService;
 import top.rain.rbac.vo.SysAccountLoginVO;
 import top.rain.rbac.vo.SysTokenVO;
 import top.rain.security.cache.TokenStoreCache;
@@ -18,16 +19,23 @@ import top.rain.security.utils.TokenUtils;
 /**
  * 权限认证服务实现类
  *
- * @author mqxu
+ * @author rain
  */
 @Service
 @AllArgsConstructor
 public class SysAuthServiceImpl implements SysAuthService {
     private final TokenStoreCache tokenStoreCache;
     private final AuthenticationManager authenticationManager;
+    private final SysCaptchaService sysCaptchaService;
 
     @Override
     public SysTokenVO loginByAccount(SysAccountLoginVO login) {
+        //验证码校验
+        boolean flag = sysCaptchaService.validate(login.getKey(),login.getCaptcha());
+
+        if (!flag){
+            throw new ServerException("验证码错误");
+        }
         Authentication authentication;
         try {
             // 用户认证

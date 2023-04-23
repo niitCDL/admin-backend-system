@@ -11,7 +11,7 @@ import java.util.Date;
 /**
  * Entity基类
  *
- * @author mqxu
+ * @author rain
  */
 @Data
 public abstract class BaseEntity {

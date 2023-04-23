@@ -10,7 +10,7 @@ import java.util.Date;
 /**
  *  MP 自动填充字段
  *
- * @author mqxu
+ * @author rain
  */
 public class FieldMetaObjectHandler implements MetaObjectHandler {
     private final static String CREATOR = "creator";

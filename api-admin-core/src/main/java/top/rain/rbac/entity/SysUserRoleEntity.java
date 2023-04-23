@@ -8,7 +8,7 @@ import top.rain.mybatis.entity.BaseEntity;
 /**
  * 用户角色关系表实体类
  *
- * @author mqxu
+ * @author rain
  */
 @Data
 @EqualsAndHashCode(callSuper=false)

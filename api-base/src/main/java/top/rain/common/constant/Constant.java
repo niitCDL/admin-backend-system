@@ -3,7 +3,7 @@ package top.rain.common.constant;
 /**
  * 系统常量维护
  *
- * @author mqxu
+ * @author rain
  */
 public interface Constant {
     /**
