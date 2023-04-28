@@ -59,6 +59,12 @@ public class NoticeServiceImpl extends BaseServiceImpl<NoticeDao, NoticeEntity> 
         removeById(id);
     }
 
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public void delete(List<Long> ids) {
+        removeByIds(ids);
+    }
+
     /**
      * 查询条件构造
      *

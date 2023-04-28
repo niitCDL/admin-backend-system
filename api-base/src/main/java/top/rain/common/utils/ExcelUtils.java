@@ -129,11 +129,13 @@ public class ExcelUtils {
             response.setCharacterEncoding("utf-8");
             // 这里URLEncoder.encode可以防止中文乱码 当然和easy excel没有关系
             String fileName = URLUtil.encode(excelName).replaceAll("\\+", "%20");
-            response.setHeader("Content-disposition", "attachment;filename*=utf-8''" + fileName + ".xlsx");
+            response.setHeader("Content-disposition", "attachment;filename*=utf-8" + fileName + ".xlsx");
             EasyExcel.write(response.getOutputStream(), head).sheet(StringUtils.isBlank(sheetName) ? "sheet1" : sheetName).doWrite(data);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
+//    public static void parseDict(List<SysUserExcelVO> result) {
+//    }
 }
