@@ -59,6 +59,9 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
         params.put("username", query.getUsername());
         params.put("mobile", query.getMobile());
         params.put("gender", query.getGender());
+        params.put("realName",query.getRealName());
+        params.put("beginTime",query.getBeginTime());
+        params.put("endTime",query.getEndTime());
         return params;
     }
 
@@ -67,6 +70,8 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
     public void save(SysUserVO vo) {
         SysUserEntity entity = SysUserConvert.INSTANCE.convert(vo);
         entity.setSuperAdmin(SuperAdminEnum.NO.getValue());
+        entity.setAvatar("https://pic2.zhimg.com/v2-e3d3e9cd6f0a7d989b3f7e8b4eb877d8_r.jpg?source=1940ef5c");
+        entity.setEmail(entity.getUsername() + "@qq.com");
         isExistByUserName(entity.getUsername());
         baseMapper.insert(entity);
     }

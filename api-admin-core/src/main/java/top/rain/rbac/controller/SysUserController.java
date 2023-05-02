@@ -158,5 +158,22 @@ public class SysUserController {
         return Result.ok();
     }
 
+    @PostMapping("deletemulti")
+    @Operation(summary = "批量删除用户")
+    @PreAuthorize("hasAuthority('sys:user:delete')")
+    public Result<String> deleteMulti(@RequestBody List<Long> ids) {
+        sysUserService.delete(ids);
+        return Result.ok();
+    }
+
+    @DeleteMapping("{id}")
+    @Operation(summary = "删除用户")
+    @PreAuthorize("hasAuthority('sys:user:delete')")
+    public Result<String> delete(@PathVariable("id") Long id) {
+        sysUserService.delete(List.of(id));
+        return Result.ok();
+    }
+
+
 
 }

@@ -58,9 +58,9 @@ public class SysUserVO implements Serializable {
     @Schema(description = "状态 0：停用    1：正常", requiredMode = Schema.RequiredMode.REQUIRED)
     @Range(min = 0, max = 1, message = "用户状态不正确")
     private Integer status;
-
     @Schema(description = "角色ID列表")
     private List<Long> roleIdList;
+
 
     @Schema(description = "超级管理员   0：否   1：是")
     private Integer superAdmin;
