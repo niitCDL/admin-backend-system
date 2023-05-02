@@ -39,4 +39,7 @@ public interface SysUserService extends BaseService<SysUserEntity> {
     //导出
     void export();
 
+    //修改用户状态
+    void updateStatus(Long id,Integer status);
+
 }

@@ -5,6 +5,7 @@ import com.alibaba.excel.annotation.ExcelProperty;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import top.rain.common.excel.DateConverter;
 
 import java.io.Serial;
@@ -12,6 +13,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 @Schema(description = "用户数据导出")
 public class SysUserExcelVO implements Serializable {

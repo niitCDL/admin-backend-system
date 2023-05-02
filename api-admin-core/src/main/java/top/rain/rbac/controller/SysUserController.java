@@ -143,11 +143,19 @@ public class SysUserController {
         return Result.ok();
     }
 
-    @PostMapping("export")
+    @GetMapping("export")
     @Operation(summary = "导出用户")
     @PreAuthorize("hasAuthority('sys:user:export')")
     public void export() {
         sysUserService.export();
+    }
+
+    @PostMapping("status")
+    @Operation(summary = "修改用户状态")
+    @PreAuthorize("hasAuthority('sys:user:update')")
+    public Result<String> updateStatus(@RequestParam Long id,@RequestParam Integer status) {
+        sysUserService.updateStatus(id,status);
+        return Result.ok();
     }
 
 

@@ -102,13 +102,19 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
 
             @Override
             public void doSaveBatch(List<SysUserExcelVO> result) {
-                ExcelFinishCallBack.super.doSaveBatch(result);
+                saveUser(result);
             }
 
             private void saveUser(List<SysUserExcelVO> result) {
 //                ExcelUtils.parseDict(result);
+                final int[] count = {1};
                 List<SysUserEntity> sysUserEntities = SysUserConvert.INSTANCE.convertListEntity(result);
-                sysUserEntities.forEach(user -> user.setPassword(password));
+                sysUserEntities.forEach(user -> {
+                    user.setRealName("test数据" + (++count[0]));
+                    user.setPassword(password);
+                    user.setAvatar("https://pic2.zhimg.com/v2-e3d3e9cd6f0a7d989b3f7e8b4eb877d8_r.jpg?source=1940ef5c");
+                    user.setSuperAdmin(SuperAdminEnum.NO.getValue());
+                });
                 saveBatch(sysUserEntities);
             }
         });
@@ -123,6 +129,13 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
         ExcelUtils.excelExport(SysUserExcelVO.class,
                 "system_user_excel" + DateUtils.format(new Date()),
                 "sheet1", userExcelVOList);
+    }
+
+    @Override
+    public void updateStatus(Long id, Integer status) {
+        SysUserEntity user = baseMapper.getById(id);
+        user.setStatus(status);
+        baseMapper.updateById(user);
     }
 
 }
